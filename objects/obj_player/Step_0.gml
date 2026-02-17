@@ -4,7 +4,7 @@ var _verti = keyboard_check(ord("S")) - keyboard_check(ord("W"));
 // Smooth the camera
 // Vec the movement to make diag work
 
-move_and_collide(_horiz * move_speed, _verti * move_speed, tilemap);
+move_and_collide(_horiz * move_speed, _verti * move_speed, tilemap, undefined, undefined, undefined, move_speed, move_speed);
 
 // Animations
 if (_horiz != 0 || _verti != 0)
