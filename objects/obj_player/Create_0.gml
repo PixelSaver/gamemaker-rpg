@@ -5,7 +5,7 @@ tilemap = layer_tilemap_get_id(("Col"));
 
 hp = 10;
 max_hp = hp;
-damage = 1;
+damage = 31;
 
 facing = 0;
 
@@ -26,7 +26,8 @@ is_dashing = false;
 
 function add_xp(_xp_to_add) {
     xp += _xp_to_add;
-    if (xp >= xp_require) {
+    var lvl_up = false;
+    while (xp >= xp_require) {
         level += 1;
         xp -= xp_require;
         xp_require *= 1.4;
@@ -34,7 +35,9 @@ function add_xp(_xp_to_add) {
         max_hp += 5;
         hp = max_hp;
         damage += 0.8;
-        
+        lvl_up = true;
+    }
+    if (lvl_up) {
         create_dialog([{
             name: "Congrats",
             msg: $"You leveled up! Your new stats are:\nLV {level}\nHP {max_hp}\nDMG {damage}"

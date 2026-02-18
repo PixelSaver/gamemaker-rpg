@@ -7,6 +7,11 @@ if (alarm[1] < 0) {
     alarm[1] = 20; // knockback invul frames
     
     if (hp <= 0) {
+        create_dialog([
+        {name: "Congrats",
+            msg: "You Won!"
+            }
+        ])
         instance_destroy();
         if (instance_exists(obj_player)) obj_player.add_xp(xp);
     }
