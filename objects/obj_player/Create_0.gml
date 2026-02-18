@@ -13,6 +13,17 @@ level = 1;
 xp = 0;
 xp_require = 100;
 
+dash_speed = 8;
+// frames the dash lasts
+dash_time = 10;
+// cooldown in frames before next dash
+dash_cooldown = 30;  
+// counts down dash duration
+dash_timer = 0;     
+// counts down cooldown
+dash_cooldown_timer = 0; 
+is_dashing = false;
+
 function add_xp(_xp_to_add) {
     xp += _xp_to_add;
     if (xp >= xp_require) {
