@@ -42,8 +42,42 @@ welcome_dialog = [
     {
         name: "Player",
         msg: "and my wife and kids... I guess..."
-    }
+    },
+    {
+        name: "Cross",
+        msg: "So... space to attack, shift to dash/dodge, wasd to move, and space to interact!"
+    },
+    {
+        name: "Player",
+        msg: "What...? I'm stuck and you make jokes like this?? I'm leaving."
+    },
     
+]
+fear_dialog = [
+    {
+    name: "Cross",
+    msg: "Wha... what have you done?!?!?!"
+    },
+    {
+        name: "Player",
+        msg: "I saved us all!"
+    },
+    {
+        name: "Cross",
+        msg: "I told you... THERES NO WAY OUT!!"
+    },
+    {
+        name: "Player",
+        msg: "Well, the boss is dead, so there's definitely a way out right?"
+    },
+    {
+        name: "Cross",
+        msg: "The monster still roams. . ."
+    },
+    {
+        name: "Player",
+        msg: "Huh? Yeah whatever. Bye!! I'm off to freedomland, suckers!"
+    },
 ]
 
 cam_dialog = [

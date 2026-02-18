@@ -9,9 +9,10 @@ if (alarm[1] < 0) {
     if (hp <= 0) {
         create_dialog([
         {name: "Congrats",
-            msg: "You Won!"
+            msg: "You Won... or did you?"
             }
         ])
+        global.boss_defeated = true;
         instance_destroy();
         if (instance_exists(obj_player)) obj_player.add_xp(xp);
     }
